@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Unity Scene on X - 2026-11-20 (金)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP",
+                 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    max-width: 760px;
+    margin: 2.5em auto;
+    padding: 0 1.2em 4em;
+    color: #111;
+    background: #fafafa;
+  }
+  h1 { font-size: 1.7em; border-bottom: 2px solid #111; padding-bottom: 0.3em; margin: 0; }
+  h2 { font-size: 1.3em; border-left: 4px solid #1da1f2; padding-left: 0.5em; margin-top: 2em; }
+  h3 { font-size: 1.1em; margin-top: 1.5em; color: #333; }
+  a { color: #1da1f2; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #eef1f3; padding: 0.05em 0.35em; border-radius: 3px; font-size: 0.92em; }
+  .byline { color: #555; font-size: 0.85em; margin: 0.4em 0 2em; }
+</style>
+</head>
+<body>
+<h1>Unity Scene on X - 2026-11-20 (金)</h1>
+<p class="byline">Written with Grok · Supervised by Keijiro Takahashi</p>
+<h2>全体サマリー</h2>
+<p>この日（金曜・日本時間）の日本語のUnity関連ポストは、Unityアカウントの二段階認証をめぐる騒ぎが全体を覆いました。期限までに設定しないとアカウントが止まるという話が広がり、ロックされた、慌てて設定した、メールは来ていない、といった声がゲーム開発者とVRChatユーザーの両方から相次いでいます。</p>
+<p>Unity社関連の話題も目立った日です。低ポリゴン素材で知られるSynty Studiosの買収と、その素材をAIネイティブな制作環境に統合する方針が報じられ、ターミナルからゲーム開発を進める新しいコマンドラインツールの正式版の話題や、Made with Unityのトレイラー公開も続きました。</p>
+<p>VRChat側では、VRChatが採用するUnityの新バージョンへの移行がオープンベータに入ったことが共有され、改変を止めずにアップロードを任せられるツールなど、制作を楽にする道具の紹介が広く見られました。アイドルグループやライブイベント名としての「Unity」は対象から外しています。</p>
+<h2>主なトピック・話題のクラスタ</h2>
+<h3>Unityアカウントの二段階認証</h3>
+<p>この日の最大の塊は、Unityアカウントの二段階認証の設定期限をめぐる投稿です。昼間に確認したのにロックされて開発できない、という報告から、期限直前にフレンドと慌てて設定しようとした話、そもそも通知のメールが来ていないので様子を見る、という声まで幅広く出ています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unityのアカウントロックされてて開発出来ひんやん。<br>昼間にわざわざ認証見に行ったのにアカンやん。</p>&mdash; じぬっさん C109 12/30東7 R-01b (@jinushi) <a href="https://x.com/jinushi/status/2123438779168157843?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">昨日はフレンドと｢Unityの2段階認証のやつやってねぇ！！あと10分しかねぇーー！！！…パスワード覚えてねぇ！！｣<br>って焦り散らかして、無事に22時までに再設定出来なくて一瞬お通夜モードに突入したんだけど<br>そもそも俺もフレンドもメール来てないし2段階認証未設定だからgot a kotonaki<br>多分大丈夫</p>&mdash; 悠［Yuu］ (@Yuuuuuuuuuu0609) <a href="https://x.com/Yuuuuuuuuuu0609/status/2123618134385143884?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<p>アカウントが止まって仕事にならなかった、サポートに復旧を依頼した、という深刻な報告がある一方で、普通に開けたので大丈夫だった、という安堵の声も多く、影響の出方には人によって差がありました。</p>
+<h3>Unity社と公式まわりの動き</h3>
+<p>会社としての大きなニュースは、低ポリゴンの素材で知られるSynty Studiosの買収です。創業者と多くのアーティストがUnityに加わり、膨大な素材ライブラリをAIネイティブなゲーム制作環境に統合すると報じられました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【Unity、Synty Studios買収・3D素材6万点超をSparkへ統合】<br><br>Unityは、低ポリゴン3D素材の開発会社Synty Studiosを買収した。創業者と大半のアーティストがUnityへ参加し、6万点超の素材ライブラリをAIネイティブゲーム制作環境「Unity Spark」に統合する。<br><br>既存のSynty…</p>&mdash; エンタメマニア｜エンタメ・IPビジネスを読み解く (@entamemania_biz) <a href="https://x.com/entamemania_biz/status/2123740321964036226?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<p>ツール面では、ターミナルからゲーム開発を進められる「Unity CLI」と関連パッケージの正式版が出たことを受けて、解説記事が更新されています。Unite Tokyoで公開されたMade with Unityのトレイラーが一般公開され、制作に関わった社員が感無量だと振り返る投稿もありました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">「Unity CLI」と「com.unity.pipeline」の正式版がリリースされたため、追記しました。<br><br>ゲーム開発をターミナルで、「Unity CLI」が登場 ～「Unity 7」も来年リリースへ【11月20日追記】<a href="https://t.co/GmyR6HCGdO">https://t.co/GmyR6HCGdO</a></p>&mdash; 窓の杜 (@madonomori) <a href="https://x.com/madonomori/status/2123694513831231671?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unite Tokyoで公開されたMade with Unityのトレイラーが公開されました。私にとっては長年にわたって築き上げてきたクリエイターの皆さんとの関係の集大成という内容で感無量です。ご協力いただいた皆さん、ありがとうございます！！<a href="https://t.co/dtguqrPr9M">https://t.co/dtguqrPr9M</a></p>&mdash; Yanace (@ya7ce) <a href="https://x.com/ya7ce/status/2123703402274423191?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<p>業界イベントの報道では、『学園アイドルマスター』のUI演出がUnity拡張の内製ツールで作られているという講演が紹介されました。Google Playが折りたたみ端末への対応をゲームに求める方針と、Unityアプリ向けの対応ガイドが用意されていることも伝えられています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">『学園アイドルマスター』UI演出はUnity拡張の内製ツールで実装。画面越しでもキャラを間近に見せる技法【CEDEC+KYUSHU 2026】<a href="https://t.co/aRc8yqr2KN">https://t.co/aRc8yqr2KN</a><br><br>背景をほのかに透かすガラス表現も駆使して、画面を遮るUI要素を削減。<br>奥行きと臨場感を生み出す被写界深度の表現にも力を入れた<a href="https://x.com/hashtag/CEDEC%E4%B9%9D%E5%B7%9E?src=hash&amp;ref_src=twsrc%5Etfw">#CEDEC九州</a> <a href="https://t.co/q1IqIc9Ot4">pic.twitter.com/q1IqIc9Ot4</a></p>&mdash; ゲームメーカーズ (@GameMakersJP) <a href="https://x.com/GameMakersJP/status/2123710726078689606?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Google Play、ゲームの折りたたみ端末サポートを必須化。2027年8月から<a href="https://t.co/fDieRAJRFG">https://t.co/fDieRAJRFG</a><br><br>1:1や16:10などを帯なしで表示する「Tier 3」を最低基準へ。<br>Unityアプリでの対応手順をまとめたGoogle公式のガイドやサンプルプロジェクトも提供されている<br>(記事本文は<a href="https://x.com/indiegamesjpdev?ref_src=twsrc%5Etfw">@indiegamesjpdev</a>より引用） <a href="https://t.co/W60IYYSR4D">pic.twitter.com/W60IYYSR4D</a></p>&mdash; ゲームメーカーズ (@GameMakersJP) <a href="https://x.com/GameMakersJP/status/2123740642698244389?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<h3>VRChatのUnity新バージョン移行</h3>
+<p>VRChatの開発ノートのまとめとして、VRChatが使うUnityの新しいバージョンへの対応がついにオープンベータになったことが共有されました。これまでの「まだ更新しないで」という注意が外れる一方、文字表示まわりなどに気をつける点があるとされています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">開発ノートまとめ <a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a><br><br>・Unity 6 ついにオープンベータへ<br>（『まだアプデしないでね？』は解放！でもTextureMeshProとか注意点あるよ！）<br><br>・クリエイターエコノミーに銀行振込が対応<br>（Paypalのみじゃなく、順次銀行対応）<br><br>・開発チーム、そばは冷たい方が好き！（ビッグニュース） <a href="https://t.co/bULu9jOkGm">https://t.co/bULu9jOkGm</a></p>&mdash; FoxABC(V2) (@VRCHAT_FoxABC) <a href="https://x.com/VRCHAT_FoxABC/status/2123558257990222150?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">弊イベントワールドで使用しているギミックについて、VRChat側のUnityバージョン変更以降インスタンスに入れても会場へ移動できない事例が複数回発生しているため、次回開催までに対象ギミックを撤去予定です。<br>ご心配をおかけしてしまいすみませんでした。次回以降もよろしくお願いします。</p>&mdash; VRChatイベント『F-Lick-Out』公式 (@VRCFlickOut) <a href="https://x.com/VRCFlickOut/status/2123445956486242324?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<p>移行の影響も出始めており、イベントワールドのギミックが、VRChat側のUnityバージョン変更以降に会場へ移動できない原因になっていたため撤去する、という告知もありました。</p>
+<h3>改変を支えるツールと新作アセット</h3>
+<p>VRChat向けの制作ツールでは、アバターのアップロード中も別のUnityに処理を任せて改変を続けられる仕組みが「朗報」として広く紹介されました。小瓶を飲んで小さくなるAFKギミックや新作ヘアの発売、壁や床を分割するワールド向けのエディタ拡張を絶賛する購入報告も並んでいます。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【朗報】VRChatのアバターアップロード待ち、実質ゼロへ⁉️<br><br>なんとアバターのアップロード中でもUnityで改変を続けられるツールが登場👀<br>仕組みは別のUnityにアップロードを任せるというもの。さらに次のアップロード予約まで可能‼️<br>こんなん無限に改変し続けられるやん…🥰<a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://t.co/8s2sjgGwBO">pic.twitter.com/8s2sjgGwBO</a></p>&mdash; わふまる｜のらメイド (@wahumaru) <a href="https://x.com/wahumaru/status/2123556042969899054?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【販売開始】<br>『不思議の国のアリス』モチーフ<br>【VRchat想定】Drink Me AFK<br>― 小瓶を飲んで小さくなる AFK ギミック<br>発売しました！<br><br>・アバター直下に入れるだけ<br>・色替えもUnityで完結<br>・まめフレンズ対応✨<a href="https://t.co/mTwN9KKYl7">https://t.co/mTwN9KKYl7</a><br><br>※動画音ありです<a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://x.com/hashtag/Marycia3D?src=hash&amp;ref_src=twsrc%5Etfw">#Marycia3D</a> <a href="https://x.com/hashtag/%E3%81%BE%E3%82%81%E3%83%95%E3%83%AC%E3%83%B3%E3%82%BA?src=hash&amp;ref_src=twsrc%5Etfw">#まめフレンズ</a> <a href="https://x.com/hashtag/booth_pm?src=hash&amp;ref_src=twsrc%5Etfw">#booth_pm</a> <a href="https://t.co/ewBMrvNfbt">pic.twitter.com/ewBMrvNfbt</a></p>&mdash; ハクナン_VR (@Hakunan_VR) <a href="https://x.com/Hakunan_VR/status/2123733091973816569?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">✦ ───────────────────── ✦<br>🦇【 MaouMao Hair 販売開始 】🖤<br>✦ ───────────────────── ✦<br><br>金曜日の夜。<br>約束どおり、あなたに会いに来ました。<br><br>WishListの新作ヘア<br>「MaouMao」、本日販売開始。🌙<br><br>✦ ───────────────────── ✦… <a href="https://t.co/jMqADMfELQ">pic.twitter.com/jMqADMfELQ</a></p>&mdash; WishList (@WishList_VRC) <a href="https://x.com/WishList_VRC/status/2123687798167474332?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">「【VRChatワールド支援】World Mesh Splitter｜壁・床・天井を分割するUnity Editorツール <a href="https://x.com/hashtag/vrc_AtelierViolet?src=hash&amp;ref_src=twsrc%5Etfw">#vrc_AtelierViolet</a> (通常版)」を AtelierViolet で購入しました！ <a href="https://t.co/GCNKtqQchL">https://t.co/GCNKtqQchL</a> <a href="https://x.com/hashtag/booth_pm?src=hash&amp;ref_src=twsrc%5Etfw">#booth_pm</a> <br>神です。神神神神神</p>&mdash; チュロス聖人(節制中) (@churros829majin) <a href="https://x.com/churros829majin/status/2123631071317381434?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<p>穴をあけずに穴の中が見えるグレーチングやマンホールのモデル紹介、新作アバターのテスター募集など、作り手どうしのやり取りも活発でした。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">BOOTHで販売してるグレーチングとマンホールの紹介です。<br>ただの薄いモデルを置くだけで穴をあけずに穴の中が確認できます。<br>VRchatでも使えます。<a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム開発</a> <a href="https://t.co/cvxQDbDqSB">pic.twitter.com/cvxQDbDqSB</a></p>&mdash; かたらな Unity3Dアセット販売中 (@c_cata_lana) <a href="https://x.com/c_cata_lana/status/2123639799064260731?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【テスト詳細・応募条件】<br><br>▼ テスト内容<br>・各種ギミックの動作確認<br>・アニメーションの動作確認<br>・シェイプキーの確認<br>・VRChat上での動作確認<br>・その他、不具合や問題点の確認・報告<br><br>▼ 応募条件<br>・VRChat上で実際にアバターを使用できる方<br>・Unity上での動作確認ができる方…</p>&mdash; ひゅうがなつ💅3DCG (@hyuuuuganatu) <a href="https://x.com/hyuuuuganatu/status/2123617176443813992?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<h3>アバター改変とUnityでの撮影</h3>
+<p>三つ編みと元の髪型を両立させようとUnityと格闘した報告や、ゲーム目的でVRChatを遊んでいたフレンドから改変のやり方を聞かれた、という投稿が反応を集めました。改変のついでにUnity内で写真を撮ってみた、ずっと避けていたUnity撮影に挑戦した、という声も続いています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">三つ編み使いたい　でもデフォ髪も使いたい<br>と、Unityと格闘したらこうなった😇<br>そこそこ可愛く出来たんじゃない？！？！？！ <a href="https://t.co/jw0YvqAIyh">pic.twitter.com/jw0YvqAIyh</a></p>&mdash; あずs (@bomeazusa) <a href="https://x.com/bomeazusa/status/2123494327632765280?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはようございます 🩷 Good Morning!🌸<br><br>昨日、昔はゲーム目的でしかVRCを遊んでいなかったフレンド2人から、Unityでのアバター改変について聞かれました……✨ふふ、ついにかわいい女の子になる道へと“堕ちて”しまったようですね💕<br><br>👗: ✨Sugar step ✩⡱ <a href="https://x.com/hashtag/BalGu?src=hash&amp;ref_src=twsrc%5Etfw">#BalGu</a> <a href="https://t.co/TOLQb51mUM">pic.twitter.com/TOLQb51mUM</a></p>&mdash; -≺TANG≻- (@TSANBAERBA) <a href="https://x.com/TSANBAERBA/status/2123536803542036959?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはあえー☀️(お昼)<br>改変のついでにUnity内で写真撮ってみたよ<br>ピースしてるしなのちゃんかわいいねよしよしよし<br><br>昨日は改変に時間かかってインできなかった…<br>今日こそはバイト終わりにインして乾杯する！！<br>皆さまも平日最後、もう一踏ん張りです💪<a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://x.com/hashtag/Shinano3D?src=hash&amp;ref_src=twsrc%5Etfw">#Shinano3D</a> <a href="https://t.co/pE73AlTTJn">pic.twitter.com/pE73AlTTJn</a></p>&mdash; ごまあえ@VRC (@gomaaeVRC) <a href="https://x.com/gomaaeVRC/status/2123612450981630203?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ずっと目をそらし続けてきたUnity撮影やってみたよ✨✨うまく出来てるかしら？<br><br>おはまみまみー♪みんな大好き華金ですよ！夜は晩酌したいですね♡今日も一日元気よくいきましょー！！ <a href="https://t.co/UWaqYVIJyx">pic.twitter.com/UWaqYVIJyx</a></p>&mdash; まみか/夜兎@メイン垢移行先 (@ytmmk_) <a href="https://x.com/ytmmk_/status/2123536802824835255?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【お知らせ】<br> 「MF文庫Jライブラリー 【VirtualSanrioPuroland】」 制作メンバーとして参加させていただきました！ <br>Unityエンジニアとして、ライティングやセットアップなどを担当しています！ <br>素敵なワールドになっていますので、遊びに行ってみてくださいね！<a href="https://x.com/hashtag/MF%E7%A7%8B%E3%81%AE%E5%AD%A6%E5%9C%92%E7%A5%AD?src=hash&amp;ref_src=twsrc%5Etfw">#MF秋の学園祭</a> <a href="https://x.com/hashtag/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%94%E3%83%A5%E3%83%BC%E3%83%AD?src=hash&amp;ref_src=twsrc%5Etfw">#バーチャルピューロ</a> <a href="https://t.co/OZOvwxEolm">https://t.co/OZOvwxEolm</a></p>&mdash; れみーと＠ココナラPRO認定3Dモデラー (@remiiiiiiit) <a href="https://x.com/remiiiiiiit/status/2123617549883748716?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<p>企業とのコラボワールドに、Unityエンジニアとしてライティングやセットアップを担当したという参加報告もありました。</p>
+<h3>Asset Storeのセールと生成AI素材</h3>
+<p>Asset Storeでは、キャラクターを包むエフェクト集の大幅割引や、ライトベイク用ツールのセールにあわせたプレゼント企画が告知されました。一方で、Asset StoreやFabに生成AIで作られた低品質な素材が大量に投稿され、AIを除外するフィルタを求める声が出ている、という海外の状況を紹介する投稿も広がっています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【今日のFD⚡️】朝から厨二心がうずくやつ✨<br>​<br>青白い炎に紫の魔力、黒い瘴気まで20種以上<br>キャラの全身を包み込むエフェクトで、立ち姿が一気に覚醒モード🔥<br>​<br>好みに調整👌感情に合わせて種類を変えても楽しそう！<br>​<br>『Character Effects』<br>$44 =&gt; $13.20   70%OFF⚡️11/20迄<a href="https://t.co/Tcm4wj7zsn">https://t.co/Tcm4wj7zsn</a>… <a href="https://t.co/quCkgcFjug">pic.twitter.com/quCkgcFjug</a></p>&mdash; AssetSaleLove @汗人柱 (@AssetLove) <a href="https://x.com/AssetLove/status/2123521696556790213?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">UnityアセットストアでBakeryがセール中なので、<br><br>Boothで販売しているアセットのうち好きなものを一つ、 抽選で3名の方にプレゼント！  応募方法は、（<a href="https://x.com/sonic88510?ref_src=twsrc%5Etfw">@sonic88510</a><br>)をフォローしてこのツイートをRTするだけ！ <br>セールも開催！ <a href="https://t.co/a0Li8eF4IQ">https://t.co/a0Li8eF4IQ</a> <a href="https://t.co/PCPntoesiF">pic.twitter.com/PCPntoesiF</a></p>&mdash; そにつく@ひのわ (@sonic88510) <a href="https://x.com/sonic88510/status/2123701367231631821?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unreal Engine のFabや、Unity Asset Storeでも同じ。<br>1人のアホが38,000以上のAI生成アセットを投稿してバグったり、テクスチャや3Dモデルカテゴリで低品質なAI生成コンテンツが目立ち、ユーザーから「AI除外フィルタ」の要望が相次いでいる。<br><br>この現状分からんのかな日本の人は・・・とか思う。 <a href="https://t.co/Lic11m9U7r">https://t.co/Lic11m9U7r</a></p>&mdash; 鳩家/HATOYA (@SHG_RRA) <a href="https://x.com/SHG_RRA/status/2123703182379659419?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<h3>個人ゲーム開発</h3>
+<p>個人開発では、魚雷戦ゲームで長く悩んでいた艦内の移動方式を、クリックで目的地へ自動移動する形に改めたという報告が反応を集めました。宇宙艦隊もののファン作品では、ディテールを上げた開発中の画面とともに、どんなゲームが面白いかを問いかけています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">長いこと悩まされてきた開発上の諸問題が解決し、やっと自分なりの正解と思える構造になりました。当初、艦内画面は方向キーで移動する方式でしたが、狭すぎて全く自由に動けない為、目的地をクリックして自動的に移動する方式に。<a href="https://x.com/hashtag/%E9%AD%9A%E9%9B%B7%E6%88%A6%E7%94%A8%E6%84%8F?src=hash&amp;ref_src=twsrc%5Etfw">#魚雷戦用意</a> <a href="https://x.com/hashtag/BattleStationsTorpedo?src=hash&amp;ref_src=twsrc%5Etfw">#BattleStationsTorpedo</a> <a href="https://x.com/hashtag/unity?src=hash&amp;ref_src=twsrc%5Etfw">#unity</a> <a href="https://t.co/JcYY3nuLSM">pic.twitter.com/JcYY3nuLSM</a></p>&mdash; SanetomoWorks (@sanetomo_works) <a href="https://x.com/sanetomo_works/status/2123732191679262960?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ということで開発の進捗...<br>ディティールはかなり上がった...と思います．<br>どんなゲームが面白いと思いますか？<a href="https://x.com/hashtag/%E5%AE%87%E5%AE%99%E6%88%A6%E8%89%A6%E3%83%A4%E3%83%9E%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#宇宙戦艦ヤマト</a><a href="https://x.com/hashtag/%E3%83%A4%E3%83%9E%E3%83%88MMD?src=hash&amp;ref_src=twsrc%5Etfw">#ヤマトMMD</a> ...?<a href="https://x.com/hashtag/%E3%83%A4%E3%83%9E%E3%83%88Unity?src=hash&amp;ref_src=twsrc%5Etfw">#ヤマトUnity</a> <a href="https://t.co/pWHr9qoDHr">https://t.co/pWHr9qoDHr</a> <a href="https://t.co/y6qzXG9F3m">pic.twitter.com/y6qzXG9F3m</a></p>&mdash; eightman (@eightman999) <a href="https://x.com/eightman999/status/2123790235536663020?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<h2>注目すべき個別の動き</h2>
+<p>個別の動きとしては、二段階認証の件がゲーム開発者だけでなく、改変のためにUnityを使うVRChatユーザーにも直撃した点が特徴的でした。Unityのサイトでアカウントを作った覚えがない、という人まで話題に加わり、ふだんアカウントを意識していない層にまでUnityの存在が届いたことがうかがえます。</p>
+<p>また、Synty Studiosの買収やコマンドラインツールの正式版など、Unity社の発表が重なったことで、エンジンそのものの今後に触れる投稿がいつもより多く見られました。</p>
+<h2>バグ・不満・要望の傾向</h2>
+<p>不具合や不満では、アカウントの停止に加えて、データの消失やエディタの不安定さが目立ちました。</p>
+<ul>
+<li><strong>アカウント停止</strong>：二段階認証の未設定でアカウントがロックされ、エディタを起動できなくなったという報告が複数ありました。</li>
+<li><strong>データの消失とクラッシュ</strong>：デスクトップを整理していたらプロジェクトが消えた、保存し忘れてデータが飛んだ、数分おきにクラッシュする、といった声が散発しています。</li>
+<li><strong>見た目の不具合</strong>：実行すると全ての物体が光り出す、衣装がピンクになる、髪型を組み合わせたら極端に重くなった、といった相談が見られました。</li>
+<li><strong>開発中のバグ探し</strong>：アクションRPGの開発配信で、まずバグ探しから始める回も公開されています。</li>
+</ul>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【<a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/unity?src=hash&amp;ref_src=twsrc%5Etfw">#unity</a> 】SARPGを作る。バグ探しから！ <a href="https://t.co/y0fSpXcG8G">https://t.co/y0fSpXcG8G</a> <a href="https://x.com/YouTube?ref_src=twsrc%5Etfw">@YouTube</a>より</p>&mdash; 夜星Lab (@yaboshi_Lab) <a href="https://x.com/yaboshi_Lab/status/2123763188684800392?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<h2>学習・チュートリアル・コミュニティ活動</h2>
+<p>学習面では、Unityをインストールしたら最初に触るべき機能を絞って紹介するコラムや、最新版の新規プロジェクトで再生時のドメインリロード待ちがなくなった代わりに、静的変数を自分でリセットする必要がある点をまとめた解説が共有されました。</p>
+<p>書籍では、<a href="https://x.com/ohbashunsuke">@ohbashunsuke</a> の『Unity並列開発の教科書』が審査を通過し、技術書典でのリリースが決まったと報告しています。VTuber事務所によるUnityエンジニアの求人も出ていました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">noteのコラム、2本目を公開しました。<br><br>「Unityをインストールしたら、最初に触るべき機能はこれだけ」<a href="https://t.co/bIfTdx66Sm">https://t.co/bIfTdx66Sm</a><a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a></p>&mdash; ねこかつ｜Nekokatu Game Creator (@nekokatu0112) <a href="https://x.com/nekokatu0112/status/2123566020615106773?ref_src=twsrc%5Etfw">2026年11月19日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unity 6.6の新規プロジェクトではデフォルトで、再生ボタンを押したときのドメインリロードによる待ちがなくなりました。<br>その代わり、static変数は自分でリセットしないといけません。<br>どのみちCoreCLR移行に向けて知っておくべき内容なので、概要と対応をまとめました。<a href="https://t.co/pGA1XWosSn">https://t.co/pGA1XWosSn</a></p>&mdash; Haruki Yano / Haruma-K (@harumak_11) <a href="https://x.com/harumak_11/status/2123643765071937760?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">審査通った！<br>「Unity並列開発の教科書」無事にリリースできそう。技術書典21の会期中は500円OFFの1000円です。<br>※ストア名：オオバ屋 <a href="https://t.co/2eCsrcMpXx">https://t.co/2eCsrcMpXx</a> <a href="https://t.co/p2PGAdRVwB">pic.twitter.com/p2PGAdRVwB</a></p>&mdash; オオバ | AI時代のゲーム開発 (@ohbashunsuke) <a href="https://x.com/ohbashunsuke/status/2123736761008529758?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">◆ 求人情報 ◆<br>Brave groupにて、エンジニアの求人を一部ご紹介！<br><br>📍Unityエンジニア<a href="https://t.co/MlHwufgaUS">https://t.co/MlHwufgaUS</a><br><br>📍音響エンジニア<a href="https://t.co/LIlKUDyQQw">https://t.co/LIlKUDyQQw</a><br><br>皆様のご応募をお待ちしております✨<a href="https://x.com/hashtag/VTuber?src=hash&amp;ref_src=twsrc%5Etfw">#VTuber</a> <a href="https://x.com/hashtag/%E6%B1%82%E4%BA%BA?src=hash&amp;ref_src=twsrc%5Etfw">#求人</a> <a href="https://x.com/hashtag/%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%A1?src=hash&amp;ref_src=twsrc%5Etfw">#エンタメ</a> <a href="https://x.com/hashtag/%E6%8E%A1%E7%94%A8?src=hash&amp;ref_src=twsrc%5Etfw">#採用</a> <a href="https://t.co/IjIPPGO1oZ">pic.twitter.com/IjIPPGO1oZ</a></p>&mdash; 株式会社Brave group (@bravegroup_vt) <a href="https://x.com/bravegroup_vt/status/2123612300942922099?ref_src=twsrc%5Etfw">2026年11月20日</a></blockquote>
+<h2>商用/インディー/VRChat 別の動き</h2>
+<p><strong>商用</strong>：商用寄りの動きは、Unity社によるSynty Studiosの買収と、コマンドラインツールの正式版が中心でした。業界イベントでは大手タイトルのUI制作の講演が紹介され、Asset Storeのセールや、生成AI素材の氾濫をめぐる議論も見られます。</p>
+<p><strong>インディー</strong>：インディーと個人開発では、魚雷戦ゲームの操作方式の見直しや、宇宙艦隊もののファン作品の進捗、アクションRPGのバグ探しなど、地道な改善の報告が続きました。初心者向けのコラムや技術同人誌の告知もあります。</p>
+<p><strong>VRChat</strong>：VRChat関連は、二段階認証の騒ぎに巻き込まれつつも、Unityの新バージョン移行のオープンベータ、アップロード中も改変を続けられるツール、新作ヘアやギミックの発売と、話題が多い一日でした。改変と撮影の報告も途切れず、コラボワールドの制作参加報告もありました。</p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
