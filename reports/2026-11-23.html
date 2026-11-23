@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Unity Scene on X - 2026-11-23 (月)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP",
+                 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    max-width: 760px;
+    margin: 2.5em auto;
+    padding: 0 1.2em 4em;
+    color: #111;
+    background: #fafafa;
+  }
+  h1 { font-size: 1.7em; border-bottom: 2px solid #111; padding-bottom: 0.3em; margin: 0; }
+  h2 { font-size: 1.3em; border-left: 4px solid #1da1f2; padding-left: 0.5em; margin-top: 2em; }
+  h3 { font-size: 1.1em; margin-top: 1.5em; color: #333; }
+  a { color: #1da1f2; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #eef1f3; padding: 0.05em 0.35em; border-radius: 3px; font-size: 0.92em; }
+  .byline { color: #555; font-size: 0.85em; margin: 0.4em 0 2em; }
+</style>
+</head>
+<body>
+<h1>Unity Scene on X - 2026-11-23 (月)</h1>
+<p class="byline">Written with Grok · Supervised by Keijiro Takahashi</p>
+<h2>全体サマリー</h2>
+<p>連休最終日らしく、VRChat のアバター改変やワールド制作に一日こもる投稿が全体の大きな塊になりました。その中で目立ったのが、BOOTH で「VRChat 対応」とうたいながら実機確認すらされていない、生成 AI 頼みの商品（いわゆる AI Slop）を問題視する議論です。</p>
+<p>個人ゲーム開発の進捗報告も厚く、ChatGPT や Codex、Gemini といった AI を相棒にした制作スタイルがすっかり日常の風景になっています。技術書典の会場レポートや、Unreal Engine・Godot との比較の声も並び、エンジン選びをめぐる空気感がうかがえる一日でした。</p>
+<h2>主なトピック・話題のクラスタ</h2>
+<h3>BOOTH の AI Slop 問題と改変ツール</h3>
+<p><a href="https://x.com/sechiro_vrc">@sechiro_vrc</a> が BOOTH の新着商品を調べ、VRChat 対応と書かれているのに Unity にすら入れていないと思われる商品が紛れていると指摘。生成 AI で評価するプロンプトや集計画像まで公開し、購入者側・制作者側の双方から反応が集まりました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">BoothのAI Slop、この1か月ぐらいの新着を調べたんだけど、『VRChat対応』と表記しているのにVRChatでの確認どころかUnityにすら入れていないと明記しているものがかなりの割合あって驚きを禁じ得ない…<br><br>VRChatにアップロードもせず、VRChat対応で売るのは流石に心臓が強すぎませんか…？</p>&mdash; せちろー🗺⚡喫茶はたご店長 (@sechiro_vrc) <a href="https://x.com/sechiro_vrc/status/2124686181128659200?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p>評価用プロンプトと集計結果の続報。品質を担保できない商品を出すべきではない、という声も他のユーザーから上がっています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Boothで販売されているVRChat向け商品で、VRChatでの実機確認もしていないような「AI Slop」をAIに評価・分析してもらうプロンプトを作成してみました！<br>ChatGPT無料版でもいけるはず。参考程度ではありますが、どうぞ。 <a href="https://t.co/5D2nKBx4ON">https://t.co/5D2nKBx4ON</a></p>&mdash; せちろー🗺⚡喫茶はたご店長 (@sechiro_vrc) <a href="https://x.com/sechiro_vrc/status/2124719876615147523?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">全数目視チェックしていないため、正確さは保証できないので集計結果は画像だけ。最初の票は新着VRChat向け商品の9,714件中の「Unity・VRChatでの確認未実施」と書いてある商品数の集計結果。2枚目は元データ抜粋。… <a href="https://t.co/AEaSO5y1b1">https://t.co/AEaSO5y1b1</a> <a href="https://t.co/QyzkUZnfKj">pic.twitter.com/QyzkUZnfKj</a></p>&mdash; せちろー🗺⚡喫茶はたご店長 (@sechiro_vrc) <a href="https://x.com/sechiro_vrc/status/2124762372980211754?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p>一方で、BOOTH の購入物を Unity へ直接取り込み、サムネイル表示やタブ分けまでできるツールを <a href="https://x.com/wahumaru">@wahumaru</a> が紹介。改変作業の手間を減らす道具への関心は根強いようです。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">これ絶対便利なやつ‼️<br><br>・BOOTHから直接Unityに突っ込める<br>・商品サムネをUnity上で表示<br>・衣装、ギミックなどでタブ分け<br>BOOTHくんさぁ…こういうアプリこそVRChat民が求めてるものなんですよ🙃<a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://t.co/CjMpchZeQx">https://t.co/CjMpchZeQx</a></p>&mdash; わふまる｜のらメイド (@wahumaru) <a href="https://x.com/wahumaru/status/2124668135685206142?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<h3>連休のアバター改変</h3>
+<p>新作アバターの発売に合わせて改変を予定する人、表情がデスクトップとクエストで連動しないと悩む人など、改変の試行錯誤がタイムラインを埋めました。Unity が不調になってデータを失った報告も少なくありません。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはツイないので、unityがバグった前に作ってたアバターをチラ見せ…ラバー改変に挑戦<br>またここまで取り戻せるために頑張ってます！<br>皆さんも今日一日無理なく頑張って下さい🌏 <a href="https://t.co/clvg2uSS25">pic.twitter.com/clvg2uSS25</a></p>&mdash; Yuni_verse (@HelloYuniverse) <a href="https://x.com/HelloYuniverse/status/2124633627199754544?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはとっと♪✨<br><br>題：避暑<br><br>とうとうノクアちゃんが発売されましたね<br>自分はもうしばらくしてからUnityで改変する予定です<br>それまでは凪ちゃんの衣装をどんどん着せていきます！<br><br>みなさん、今日も佳き一日を過ごしましょ🌅<a href="https://x.com/hashtag/Nagi3D?src=hash&amp;ref_src=twsrc%5Etfw">#Nagi3D</a> <a href="https://x.com/hashtag/SHOP_HEILON?src=hash&amp;ref_src=twsrc%5Etfw">#SHOP_HEILON</a> <a href="https://t.co/7R7MAM8pQ1">pic.twitter.com/7R7MAM8pQ1</a></p>&mdash; トット (@totto1917) <a href="https://x.com/totto1917/status/2124623961560633678?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはよー！！！！<br>昨日とーんしながらした改変！！！！<br>新しいお洋服でウキウキだったけどデスクトップとクエストで表情がリンクしてないっぽくて…(´・ω・｀)<br>もー！改変すると絶対何かある！！！家にパソコン届いたらめっちゃ改変してUnityいじめてやるんだもん！！！！<br>あと最近煽り顔覚えました(… <a href="https://t.co/0KsqjLmRfa">pic.twitter.com/0KsqjLmRfa</a></p>&mdash; よいくん (@izayoi20080930) <a href="https://x.com/izayoi20080930/status/2124647936000987430?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<h3>個人ゲーム開発の進捗</h3>
+<p>ストーリーに合わせた演出設計、ボス戦の実装、新キャラクターの完成など、インディー開発者の進捗報告が続きました。AI を使った制作や、アセット取り込みの躓きを乗り越えた話も見られます。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">たまには本編も<br>時刻や天候はリアルタイム・ランダム変更ではなく、ストーリーイベントに応じて、あらかじめ演出を決めておこうと思います<br><br>アクションも大事だけど、ストーリーと雰囲気も重視します<a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://t.co/k2UVPZegLC">pic.twitter.com/k2UVPZegLC</a></p>&mdash; Riez-ON（りーずおん） (@riez_on) <a href="https://x.com/riez_on/status/2124676808725667919?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">中ボス登場⇒撃破⇒報酬⇒次ステージまでの繋ぎOK！<br>ボスの動きはこれからだったり、色々素材はまだだけど形にはなってきました！<br>光の加減とかカメラ視点でだいぶ良くなるなーと🧐<a href="https://x.com/hashtag/unity?src=hash&amp;ref_src=twsrc%5Etfw">#unity</a> <a href="https://t.co/5GHNQOMKLX">pic.twitter.com/5GHNQOMKLX</a></p>&mdash; MOMO (@Momo1550930Momo) <a href="https://x.com/Momo1550930Momo/status/2124727261584826643?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">「玄武」をモチーフにした新キャラが完成しました！<br><br>A new Genbu-inspired character is ready!<a href="https://x.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://t.co/TnYaLVp6jW">pic.twitter.com/TnYaLVp6jW</a></p>&mdash; YmtIsk＠剣戟ゲーム制作中 (@YmtIsk) <a href="https://x.com/YmtIsk/status/2124533753146130579?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<p>ChatGPT や Codex と組んでゲームを作る流れは、今日もはっきり見えました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ChatGPT+Unityでゲーム制作中‼️🔥<br><br>『けもさんタクティクス(仮』!!笑<a href="https://x.com/hashtag/%E3%81%91%E3%82%82%E3%81%95%E3%82%93?src=hash&amp;ref_src=twsrc%5Etfw">#けもさん</a> <br><br>大事なことは足すことではなく、引くことである。<br><br>⋯ってわかってるんだけど、アレやコレやと要素を足したくなる衝動に駆られている🤦💦<br><br>こ、ここまでにする‼️😭笑<br><br>メンバーは最初、射蘭含めて三人。… <a href="https://t.co/X3NfH42Eaj">pic.twitter.com/X3NfH42Eaj</a></p>&mdash; てと@三国志×AIart 🐎 (@Teto_Sangokushi) <a href="https://x.com/Teto_Sangokushi/status/2124771200501199226?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">道路に苔を生やしてみました。<br>しばらくはもうcodexの利用量がないのでアイデアを練る時間にします。<a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/Codex?src=hash&amp;ref_src=twsrc%5Etfw">#Codex</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://t.co/JTzECT4JpZ">pic.twitter.com/JTzECT4JpZ</a></p>&mdash; よいかぜ (@tube_you60445) <a href="https://x.com/tube_you60445/status/2124704653678092434?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p>アセットストアでの買い物と取り込みの手応えを語る投稿もありました。</p>
+<h3>エンジン比較とアセット活用</h3>
+<p>Unreal Engine に触れて Unity との違いを語る声や、Godot へ移った開発者が多いという感想など、エンジン選びの話題もちらほら。Unreal 向け素材を Unity に変換する方法の紹介も注目を集めました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">今日も今日とてUE5<br>動画を参考にしながらギミック系を作った<br>少しずつ操作に慣れてきた希ガス<br>BPも慣れれば扱いやすいなって思う<br>あと、Unityに比べて簡単なギミックとか作りやすい気もする<br>明日は予定があるので恐らく制作はお休みです<a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/UE5?src=hash&amp;ref_src=twsrc%5Etfw">#UE5</a> <a href="https://t.co/3Y5hByHUqF">pic.twitter.com/3Y5hByHUqF</a></p>&mdash; アスト (@AsutoNEXIGA) <a href="https://x.com/AsutoNEXIGA/status/2124537466594132126?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">そしてまた散財してしまいました……。<br>だって、通常モンスターも欲しかったし？<br><br>Unityアセット取り込み、最初に躓いたのが何だったんだ、ってくらい、なんか普通に出来るようになってきた？<br>いや、このセットが優秀だからだな、きっと。<a href="https://x.com/hashtag/RPGBakin?src=hash&amp;ref_src=twsrc%5Etfw">#RPGBakin</a> <a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/Indiegamedev?src=hash&amp;ref_src=twsrc%5Etfw">#Indiegamedev</a> <a href="https://t.co/9EpLmLnK4x">pic.twitter.com/9EpLmLnK4x</a></p>&mdash; Stilhearts (@Sthilhearts) <a href="https://x.com/Sthilhearts/status/2124805154390061458?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<h3>Unity 撮影</h3>
+<p>VRChat 用アバターを Unity 内で撮影し、写真作品に仕上げる楽しみ方も定着しています。透視投影カメラの歪みや構図の工夫を語る投稿もありました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">今日はご機嫌ななめ<br><br>Unity撮影の練習┊６日目<a href="https://x.com/hashtag/Alu%C3%A9?src=hash&amp;ref_src=twsrc%5Etfw">#Alué</a> <a href="https://x.com/hashtag/ALUE3D?src=hash&amp;ref_src=twsrc%5Etfw">#ALUE3D</a> <a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://t.co/FPebRe93Be">pic.twitter.com/FPebRe93Be</a></p>&mdash; mamefu（まめふ）@11月25日(水)キャスト出勤 (@Mamefu_vr) <a href="https://x.com/Mamefu_vr/status/2124831079437828302?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">unity内でお写真撮れるようになった！<br>ずっとやってみたかったコラージュをしてみましたよ📷 <a href="https://t.co/nVNSwyYBTy">pic.twitter.com/nVNSwyYBTy</a></p>&mdash; 𝑴𝒖 (@rim_tea_) <a href="https://x.com/rim_tea_/status/2124527541969170864?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<h2>注目すべき個別の動き</h2>
+<p>ツールやデバイス、ローカライズまわりで目を引く動きがいくつかありました。</p>
+<p><a href="https://x.com/asterjp_VRC">@asterjp_VRC</a> が、Avatar Pose Library のメニューやアイコンを Unity で事前生成するアドオンを発売。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">🎉 APL PreBuild Addon 1.0 発売！<br><br>Avatar Pose LibraryのメニューやアイコンをUnityで事前生成。<br>373ポーズの実測で、ビルド時間は単体で約19％、別売ABoS併用で約54％短縮。<br><br>🎁 抽選で3名様にBOOTHギフト<br>① <a href="https://x.com/asterjp_VRC?ref_src=twsrc%5Etfw">@asterjp_VRC</a> をフォロー<br>② このポストにいいね＋リポスト<br>締切 11/24（火）18:00 JST… <a href="https://t.co/rZj0SmMNja">pic.twitter.com/rZj0SmMNja</a></p>&mdash; aster_jp (@asterjp_VRC) <a href="https://x.com/asterjp_VRC/status/2124789589084963000?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p><a href="https://x.com/Dream_Drive">@Dream_Drive</a> は、ネイティブ Unity 用 SDK が出たハンドトラッキンググローブでロボットハンドを操縦するデモを公開。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ContactGlove3 Pro Pre-productionモデルでファイバリオンのハンドを操縦するロボトラ。<br><br>ネイティブUnity用SDKが登場したので対応！<br><br>これまでPython版SDKからのゲートウェイがボトルネックで30Hzだったのが、100Hzに！<br><br>ヌルヌル動くようになって、さらにキモくなった😆<a href="https://x.com/hashtag/%E3%83%AD%E3%83%9C%E3%83%88%E3%83%A9?src=hash&amp;ref_src=twsrc%5Etfw">#ロボトラ</a> <a href="https://x.com/hashtag/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%90%E3%83%AA%E3%82%AA%E3%83%B3?src=hash&amp;ref_src=twsrc%5Etfw">#ファイバリオン</a> <a href="https://t.co/9jAoFe8tGu">pic.twitter.com/9jAoFe8tGu</a></p>&mdash; みっちー (@Dream_Drive) <a href="https://x.com/Dream_Drive/status/2124724430182207897?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p><a href="https://x.com/Rokusai_K">@Rokusai_K</a> による、Unity・Godot・Unreal 製ゲームを国産 AI で日本語化する無料ソフトの紹介も話題になりました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">『Unity・Godot4・UE4/5製ゲームを国産AIで高精度な日本語に自動翻訳する（PLaMo 3 Translate使用）』<br><br>無料の日本語化ソフトを使って「Knights of Pen and Paper」シリーズを一斉購入して遊んでる😼<br><br>昔のunityや、Godot、UE4/5、RPGmaker製ゲーム（試験段階）も翻訳できるのが良いね！(∩´∀｀)∩ <a href="https://t.co/ppT7KnXYhg">pic.twitter.com/ppT7KnXYhg</a></p>&mdash; 葛飾六斎@ばぶリッシャー👶Rosa (@Rokusai_K) <a href="https://x.com/Rokusai_K/status/2124645748084212010?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<p>素材まわりでは、Unreal 素材を Unity に変換する手順、写真から草花の三次元モデルを作る AI ワークフロー、無料で使えるゲーム UI 素材サイトが共有されています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【⚡️本日のFD】Unrealの素材がUnityで使える!?<br>​<br>Fab無料プレゼントやHumbleで手に入れた3D素材を、Unityへまとめて変換<br>​<br>モデルだけでなく、配置やマテリアル、LODまで引き継げる便利ツール<br>​<br>Exporter for Unreal to/for Unity 2026<br>$65.99 =&gt; $19.80    70%OFF⚡️11/23迄<a href="https://t.co/bHsXqmnG7q">https://t.co/bHsXqmnG7q</a>… <a href="https://t.co/rPxovu7YlX">https://t.co/rPxovu7YlX</a></p>&mdash; AssetSaleLove @汗人柱 (@AssetLove) <a href="https://x.com/AssetLove/status/2124702940200042940?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【衝撃】<br>写真1枚から、Unityでそのまま使える草花の3Dを作る流れを<br>Fable 5.2に組ませた人が現れてヤバい🔥<a href="https://t.co/m81Jb5wzbU">pic.twitter.com/m81Jb5wzbU</a><br>これ何ができるかというと👇<br>・普通のスイセンの写真が、1回目で使える3Dの草花になった<br>・草花は18種類。草1本は三角形18枚で、風でしなる… <a href="https://t.co/An2UZePdqe">https://t.co/An2UZePdqe</a></p>&mdash; Claude Code Studio (@ClaudeCode_love) <a href="https://x.com/ClaudeCode_love/status/2124734690401956317?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ゲームUI素材が2,451点、全部CC0で無料のサイトが便利すぎました<br><br>・アイコン897点、ボタン505点、ゲージ144点<br>・SVGとPNG対応、ボタンは9-slice対応<br>・商用利用OK、クレジット表記も不要<br>・登録なしで、ダウンロードまでできる<br><br>詳しくnoteにまとめました（リプライに置きます）<a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://t.co/mQGb7cs4rk">pic.twitter.com/mQGb7cs4rk</a></p>&mdash; ねこかつ｜Nekokatu Game Creator (@nekokatu0112) <a href="https://x.com/nekokatu0112/status/2124703233733964165?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p>Daggerfall の Unity 移植版を日本語化して遊ぶ配信や、今週中の公開を目指して長時間ワールド制作に打ち込む報告も。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【TES2 Daggerfall】Unity版Daggerfall&amp;日本語Modでクリアを目指す！ #31 <a href="https://t.co/vFmCeOdr4G">https://t.co/vFmCeOdr4G</a> <a href="https://x.com/YouTube?ref_src=twsrc%5Etfw">@YouTube</a>より</p>&mdash; アール (@R_TES_) <a href="https://x.com/R_TES_/status/2124751952907309191?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">わぁ…？！もうこんな時間…💦<br>１３時間もUnityしてたの私…。<br><br>なんと９割ワールド完成しました✨<br>今週の金曜日に公開できそうです♪<br>ボツにならなくてよかったぁ～(´；ω；｀)</p>&mdash; ゆうり＠VRC (@yuuri15VRC) <a href="https://x.com/yuuri15VRC/status/2124559756627218503?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<h2>バグ・不満・要望の傾向</h2>
+<p>不満の中心は、相変わらずエディタの不安定さと環境構築です。</p>
+<ul>
+<li><strong>データ消失・不具合</strong>：改変中に Unity が不調になり、作業データが吹き飛んだという報告が複数見られました。</li>
+<li><strong>ライセンスと起動</strong>：ライセンス関連のエラーで開かない、ダウンロードが終わらないといった入口でのつまずき。</li>
+<li><strong>重さ</strong>：ポーズや大量のアセットを入れるとエディタが重くなる、メモリと CPU を使い切るという声。</li>
+<li><strong>UI まわり</strong>：TextMeshPro の複雑さや、アニメーター設定の優先順位に戸惑う投稿もありました。</li>
+</ul>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">あっ…Unityがバグったかもしれん…<br>表情12個作ったんやけど…持ってこれるかなこれ…</p>&mdash; Rain/レイン damagumo (@RainDamagumo) <a href="https://x.com/RainDamagumo/status/2124595222227370225?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<h2>学習・チュートリアル・コミュニティ活動</h2>
+<p>技術書典では Unity 関連の合同本が並ぶ一方、<a href="https://x.com/ruten">@ruten</a> は会場の印象として Godot が一定数あり Unity は減ったと振り返っています。学習面では、チュートリアルより生成 AI に質問しながら覚えるほうが分かりやすいという <a href="https://x.com/umisio">@umisio</a> の声が象徴的でした。</p>
+<p>AI と一緒に学ぶ人、学び始めた人。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">最近はUnityをGeminiに質問しながら触ってて、下手なチュートリアルよりこっちのほうがわかりやすかったりする。<br>意味わかんないところは都度聞けるし。<br><br>ただ、ほんとさわりのどうでもいいようなことしかやってないからってのもある。</p>&mdash; うみしお (@umisio) <a href="https://x.com/umisio/status/2124853264105800114?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unityの勉強中らしい <a href="https://t.co/lU4BsMrLHX">pic.twitter.com/lU4BsMrLHX</a></p>&mdash; つばめん (@tubamen__) <a href="https://x.com/tubamen__/status/2124841278651388267?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<p>Qiita では、ヒットストップの作り方や XREAL 向けアプリ開発のメモといった実践的な記事が共有されました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【Unity】今更聞けないヒットストップの作り方：timeScale で止める？Animator で止める？<br>by <a href="https://x.com/Ozaki_Ryu_?ref_src=twsrc%5Etfw">@Ozaki_Ryu_</a><a href="https://t.co/MZkc3P0PFp">https://t.co/MZkc3P0PFp</a></p>&mdash; Qiita_Unity2 (@Qiita_Unity2) <a href="https://x.com/Qiita_Unity2/status/2124569948089454864?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">記事を投稿しました！ UnityでXREAL AURAアプリを開発する際のメモ on <a href="https://x.com/hashtag/Qiita?src=hash&amp;ref_src=twsrc%5Etfw">#Qiita</a> <a href="https://t.co/PXJeV4v1w0">https://t.co/PXJeV4v1w0</a></p>&mdash; ないすれっど (@Taka_Yoshinaga) <a href="https://x.com/Taka_Yoshinaga/status/2124647476573737218?ref_src=twsrc%5Etfw">2026年11月22日</a></blockquote>
+<p>レシートプリンタを Unity から叩くライブラリの話など、ものづくり寄りの話題も。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ドフガイドとイロイロドロ（？）を買わせていただきました😇<br>TM-T88IVはすでに遊んだ（&amp;妹の卒業制作のためにC#なUnityから叩けるライブラリのようなものを作った）ので、今こそSUNMIの端末（レシートプリンタ付き）で遊ぶ時……！ <a href="https://t.co/1lK49oGxbI">https://t.co/1lK49oGxbI</a></p>&mdash; ﾒﾙ (@erst_melchior) <a href="https://x.com/erst_melchior/status/2124759784075460981?ref_src=twsrc%5Etfw">2026年11月23日</a></blockquote>
+<h2>商用/インディー/VRChat 別の動き</h2>
+<p><strong>商用</strong>：Unity 社そのものの発表や経営の話題は目立たず、商用寄りの動きはデバイス向け SDK や有料ツールの発売といった周辺エコシステムが中心でした。</p>
+<p><strong>インディー</strong>：インディーでは AI を組み合わせた開発の進捗報告が厚く、無料素材や変換ワークフローの共有も活発でした。エンジン選びでは Unreal Engine や Godot と比較する声も見られます。</p>
+<p><strong>VRChat</strong>：VRChat 界隈は連休の改変・撮影・ワールド制作で賑わいました。BOOTH の AI Slop 問題は、購入前に動作確認の有無を見極める必要性を改めて浮かび上がらせています。</p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
