@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Unity Scene on X - 2026-11-26 (木)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP",
+                 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    max-width: 760px;
+    margin: 2.5em auto;
+    padding: 0 1.2em 4em;
+    color: #111;
+    background: #fafafa;
+  }
+  h1 { font-size: 1.7em; border-bottom: 2px solid #111; padding-bottom: 0.3em; margin: 0; }
+  h2 { font-size: 1.3em; border-left: 4px solid #1da1f2; padding-left: 0.5em; margin-top: 2em; }
+  h3 { font-size: 1.1em; margin-top: 1.5em; color: #333; }
+  a { color: #1da1f2; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #eef1f3; padding: 0.05em 0.35em; border-radius: 3px; font-size: 0.92em; }
+  .byline { color: #555; font-size: 0.85em; margin: 0.4em 0 2em; }
+</style>
+</head>
+<body>
+<h1>Unity Scene on X - 2026-11-26 (木)</h1>
+<p class="byline">Written with Grok · Supervised by Keijiro Takahashi</p>
+<h2>全体サマリー</h2>
+<p>この日も最大の塊はVRChatのアバター改変まわりで、アップロード前の赤い警告やプロジェクト破損と格闘する声、そしてUnityの画面そのものを撮影の場にする「Unity撮影」の投稿がタイムラインを埋めました。</p>
+<p>エンジン側では、Unite Tokyo で紹介された Unity CLI 向け Generator プラグインのオープンベータ公開、UIEffect の更新、CoreCLR 移行を見据えた Lifecycle API の解説など、開発者向けの具体的な話題がそろいました。廣鉄夫さんの新刊『Unity C#で神になる本。』の発売や、にじさんじVTuberがUnityで自作した配信システムのニュースも広く読まれています。</p>
+<h2>主なトピック・話題のクラスタ</h2>
+<h3>VRChat改変・アバター</h3>
+<p>改変の進捗報告と、Unityとの「和解」をめぐる日常的なつぶやきが今日も大きな流れでした。<a href="https://x.com/MagicaSoft">@MagicaSoft</a> は MagicaCloth の次期版でアバター衣装のめり込みやスカートの変形を検証する進捗を共有しています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">MagicaCloth3開発進捗<br>Vアバター系のテストです<br>衣装に重なる小物や紐などがめり込んでいないこと、座ったときのスカートの自然な形状変形、超ロングヘアの動きなどに注目してほしい<br>これは前作では難しい表現でした<a href="https://x.com/hashtag/Unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#Unity3d</a> <a href="https://x.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://t.co/Ig0dMSI5mG">pic.twitter.com/Ig0dMSI5mG</a></p>&mdash; Magica Soft✨MagicaCloth2販売中！ (@MagicaSoft) <a href="https://x.com/MagicaSoft/status/2125800732347842575?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p>朝の挨拶とセットで改変の近況を報告するスタイルが定着しており、赤警告に負けてアップロードできなかった話や、久しぶりの改変を見せる投稿が並びました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://x.com/hashtag/AvaPo?src=hash&amp;ref_src=twsrc%5Etfw">#AvaPo</a> <a href="https://x.com/hashtag/Cian3D?src=hash&amp;ref_src=twsrc%5Etfw">#Cian3D</a><br>もくよ～び(⊃д⊂)ｵｯ･･･∩･д･∩ ﾊｧｰ☀️<br>昨日はUnityの赤警告に勝てなかったので今日こそアップロードしたい(*｀ω´)ぐぬぬ... <a href="https://t.co/8h2igY5LIJ">pic.twitter.com/8h2igY5LIJ</a></p>&mdash; uuupok (@UuuPOK0000) <a href="https://x.com/UuuPOK0000/status/2125693853995057514?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはよ☀️<br><br>一億年ぶりにちゃんと改変した狛乃。<br>メロを目指しても可愛い系になりメロ方面断念。<br>Unityとお友達になろうね私、、、<a href="https://x.com/hashtag/VRChat?src=hash&amp;ref_src=twsrc%5Etfw">#VRChat</a> <a href="https://x.com/hashtag/komano3d?src=hash&amp;ref_src=twsrc%5Etfw">#komano3d</a> <a href="https://x.com/hashtag/DVOID_vrc?src=hash&amp;ref_src=twsrc%5Etfw">#DVOID_vrc</a> <a href="https://t.co/tMuPfhU3SW">pic.twitter.com/tMuPfhU3SW</a></p>&mdash; shion_aaa (@shion_aaa8867) <a href="https://x.com/shion_aaa8867/status/2125711125857628301?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<p><a href="https://x.com/HayaseKisyu">@HayaseKisyu</a> の「これからアバター制作を始める人へ」は、入門者向けの手引きとして注目を集めました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">これからアバター制作を始める人へ…</p>&mdash; 速瀬 喜舟💙男性アバター制作中 (@HayaseKisyu) <a href="https://x.com/HayaseKisyu/status/2125920864717947366?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<h3>Unity撮影</h3>
+<p>VRChat に入らずエディタ上でアバターを撮る「Unity撮影」が一つのジャンルとして根付いています。エディタ画面を模したワールドで撮影する遊び心のある投稿も見られました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはぼし〜🌟<br>Unityの画面で写真が撮れるワールドに行ってきたよ〜！まあ…見慣れた光景ですね！！<a href="https://x.com/hashtag/VRchat?src=hash&amp;ref_src=twsrc%5Etfw">#VRchat</a> <a href="https://x.com/hashtag/Milltina3d?src=hash&amp;ref_src=twsrc%5Etfw">#Milltina3d</a> <a href="https://x.com/hashtag/Milltina?src=hash&amp;ref_src=twsrc%5Etfw">#Milltina</a> <a href="https://t.co/X5MbKlcNGF">pic.twitter.com/X5MbKlcNGF</a></p>&mdash; キラキラぼし (@kirakirabosivrc) <a href="https://x.com/kirakirabosivrc/status/2125696030759153950?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">たまにはUnity撮影 <a href="https://t.co/LLp6b8ycoi">pic.twitter.com/LLp6b8ycoi</a></p>&mdash; ゆきみ (@8lurqx) <a href="https://x.com/8lurqx/status/2125907861675131325?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">最近ずっとUnity撮影ばっかりやってたから久しぶりにぶいちゃで撮影したよ！背景あるとやっぱり雰囲気あるね～✨✨<br><br>おはまみまみー♪今日も一日元気よくいきましょー♡ <a href="https://t.co/KwknEeO9hc">pic.twitter.com/KwknEeO9hc</a></p>&mdash; まみか/夜兎@メイン垢移行先 (@ytmmk_) <a href="https://x.com/ytmmk_/status/2125733775447576984?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">かわいくできたのではないでしょうか！！！！！！！？？？？？！？！<br><br>表情ちゃんと7種類作って、unity撮影します...🙌 <a href="https://t.co/5u4xMI9tp0">pic.twitter.com/5u4xMI9tp0</a></p>&mdash; しのののん (@shinono___non) <a href="https://x.com/shinono___non/status/2125927446616920554?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p>表情をそろえたアバターをこれから撮影するという制作途中の報告もありました。</p>
+<h3>生成AIとUnity</h3>
+<p>生成AIを制作の相棒にする報告が続いています。UIをエディタで組まずに生成してしまう発想や、Claude Code とUnityで和風アクションを作る試み、海外の個人開発者がAIにBlenderスクリプトを書かせて大量のモデルを用意した事例の紹介がありました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ChatGPTでゲーム制作中‼🔥<a href="https://x.com/hashtag/%E3%81%91%E3%82%82%E3%81%95%E3%82%93?src=hash&amp;ref_src=twsrc%5Etfw">#けもさん</a><br><br>UIをunityで作るのではなく<br><br>生成すればいいじゃない！<br><br>となるまでに三時間かかった… <a href="https://t.co/K6jnbyAUFG">pic.twitter.com/K6jnbyAUFG</a></p>&mdash; てと@三国志×AIart 🐎 (@Teto_Sangokushi) <a href="https://x.com/Teto_Sangokushi/status/2125833164161683885?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Claude Code と Unityで、3Dゲーム『封陣』を制作中。<br>陰陽師を動かして道に結界の陣を描き、妖怪を捕らえて符で封じる。<br><br>最初のエリア「羅城門の南の野道」を、操作を覚えるためのチュートリアルとして作り込んだ。<br><br>はじめは、操作の説明を道に沿って置き、自由に歩きながら読んでいく形だった。… <a href="https://t.co/fginQboDKq">pic.twitter.com/fginQboDKq</a></p>&mdash; akiraxx (@theeakiraxx) <a href="https://x.com/theeakiraxx/status/2125794175383634116?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">個人ゲーム開発者のZack氏、中世交易ゲーム『Packroad』の3Dモデルが1,100個を超えたとのこと。<br>うち数百個はClaudeに書かせたBlenderのPythonスクリプトで生成。AIに頼むのは「モデルそのもの」ではなく「モデルを作るスクリプト」というのが肝。<br><br>ポイント👇… <a href="https://t.co/mpckzDsqBi">https://t.co/mpckzDsqBi</a></p>&mdash; ナギ｜海外AIウォッチ (@nagi_aiwatch) <a href="https://x.com/nagi_aiwatch/status/2125837311527276598?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<h3>個人ゲーム開発</h3>
+<p>ハッシュタグ付きの開発進捗も安定して流れています。移動基地型のタワーディフェンス、放置タワーディフェンスのデバッグ機能追加、ロボとの遭遇シーンへのBGM追加など、手触りのある途中経過が共有されました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">趣味全振りで移動基地タワーディフェンスを作って遊んでました<br>この路線もありだな、と考え中<a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://x.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://t.co/7edgnEoKWj">pic.twitter.com/7edgnEoKWj</a></p>&mdash; shutorumu (@sturmkatze524) <a href="https://x.com/sturmkatze524/status/2125650762370068628?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">【放置タワーディフェンス】デバッグ機能を追加しました<br><br>【作業内容】<br>開発中の【放置タワーディフェンス】の久しぶりの進捗報告です。<br>デバッグ機能を追加しました！… <a href="https://t.co/qC1SCiocOn">https://t.co/qC1SCiocOn</a> <a href="https://t.co/REFspeNcFX">pic.twitter.com/REFspeNcFX</a></p>&mdash; miya (@miya00907380) <a href="https://x.com/miya00907380/status/2125711128995201186?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ぶるにゃんロボとの遭遇シーンにBGMを入れました！<br> <a href="https://x.com/hashtag/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA?src=hash&amp;ref_src=twsrc%5Etfw">#個人開発</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://t.co/QhWkX5CJoL">pic.twitter.com/QhWkX5CJoL</a></p>&mdash; ハリボ (@harry_k4625) <a href="https://x.com/harry_k4625/status/2125794328413114489?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p>ゲームのPVを Blender とUnityで作り、映像編集ツールで仕上げていたという制作舞台裏の紹介も目を引きました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">これは1.5周年の時に作ったベロータの動画です。<br>この時はblenderで作ってUnityで動かしてAftereffectで編集していました。<br>今回はblenderでほとんど完結させて、音合わせをAftereffectでやってます。<br>こうしてみるとモデリングも上達している気がする。<a href="https://x.com/hashtag/NIKKE?src=hash&amp;ref_src=twsrc%5Etfw">#NIKKE</a> <a href="https://x.com/hashtag/blender?src=hash&amp;ref_src=twsrc%5Etfw">#blender</a> <a href="https://t.co/vYpopk0BZ3">https://t.co/vYpopk0BZ3</a> <a href="https://t.co/gegCxN4PRm">pic.twitter.com/gegCxN4PRm</a></p>&mdash; 0から始めるblender生活 (@0_blender) <a href="https://x.com/0_blender/status/2125919793433948183?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<h2>注目すべき個別の動き</h2>
+<p>開発者向けのツールやAPIまわりで、具体的なリリースと解説が重なった日でした。</p>
+<p><a href="https://x.com/_kzr">@_kzr</a> は Unite Tokyo のセッションで紹介した Unity CLI 用 Generator プラグインがオープンベータとして公開されたことを告知しました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unite Tokyo のセッションでも紹介した Unity CLI 用の Generator プラグインが open beta として公開されました。あの中で紹介したサンプルは全てこれを使用しています。<br>プロトタイピングに非常に便利な仕組みです。ぜひお試しください。<a href="https://t.co/f6Y8lIiUTS">https://t.co/f6Y8lIiUTS</a></p>&mdash; Keijiro Takahashi (@_kzr) <a href="https://x.com/_kzr/status/2125922783611978110?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p><a href="https://x.com/mob_sakai">@mob_sakai</a> は UIEffect の新版をリリースし、角丸エフェクトなどの追加機能を紹介しています。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">🥳 Unity向けパッケージ「UIEffect v5.15.0」をリリースしました！<br><br>最近追加された機能：<br>・Round Cornerエフェクト<br>・Additional Resouceのパッケージ対応<br>・CSSから色/グラデーションをペースト<br><br>詳しくは：<a href="https://t.co/4aEbFnJVNz">https://t.co/4aEbFnJVNz</a><a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://x.com/hashtag/unity3d?src=hash&amp;ref_src=twsrc%5Etfw">#unity3d</a> <a href="https://x.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> <a href="https://x.com/hashtag/OpenSource?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSource</a> <a href="https://t.co/GttUhG56GO">pic.twitter.com/GttUhG56GO</a></p>&mdash; mob-sakai (@mob_sakai) <a href="https://x.com/mob_sakai/status/2125881864045138234?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p>CoreCLR に向けて追加された Lifecycle API の解説や、GameObject を非アクティブにしたときにアニメーションが巻き戻る問題への対処など、実務的な知見も共有されました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unity 6.5でLifecycle APIが追加されました。CoreCLRに向けたもので、今までInitializeOnLoadやplayModeStateChangedを使っていた部分は、今後こちらを使うことが推奨されています。従来のAPIとの対応も表にまとめました。<a href="https://t.co/hr9qrYGzdS">https://t.co/hr9qrYGzdS</a></p>&mdash; Haruki Yano / Haruma-K (@harumak_11) <a href="https://x.com/harumak_11/status/2125863605279002697?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unityで<br>「GameObjectを非アクティブにすると、アニメーションが最初に戻ってしまう」<br>みたいな時に役立つ話！<br><br>非アクティブにしてもAnimatorの再生状態を保持するkeepAnimatorStateOnDisable<a href="https://t.co/ThaLJ8MJuS">https://t.co/ThaLJ8MJuS</a> <a href="https://t.co/6Gto6c4wvO">pic.twitter.com/6Gto6c4wvO</a></p>&mdash; カン@ゲームクリエイター(Unity/Steam/スマホアプリ/UEFN/VR/Switch) (@Kan_Kikuchi) <a href="https://x.com/Kan_Kikuchi/status/2125719593700438350?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<p>TextMeshPro に代わる高速なテキスト処理アセットの紹介も話題になっていました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">TextMeshProの常識が変わるかも!?<br>​<br>テキスト処理が2〜20倍高速、GC割り当てゼロ<br>フォントファイルもアトラスも不要。どんな仕組み？<br>​<br>日本語・絵文字対応、3D文字も作れる新世代テキストエンジン<br>​<br>UniText - Text Engine for Unity<br>$108.90 =&gt; $32.67    70%OFF⚡️11/26迄<a href="https://t.co/K8rfhc2wRc">https://t.co/K8rfhc2wRc</a>… <a href="https://t.co/dDDRBrhfjU">pic.twitter.com/dDDRBrhfjU</a></p>&mdash; AssetSaleLove @汗人柱 (@AssetLove) <a href="https://x.com/AssetLove/status/2125914881149092155?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p>VTuberが自宅スタジオからの全周配信を、VRChat を使わずUnityで自作したシステムで実現したというニュースが広く共有されました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">にじさんじVTuber鈴木勝、自宅3Dスタジオから360度配信を実施、VRChatを使わず、Unityでシステムを自作 - MoguLive <a href="https://t.co/Za6wBjhWcg">https://t.co/Za6wBjhWcg</a></p>&mdash; MoguLive (@MoguLiveJP) <a href="https://x.com/MoguLiveJP/status/2125820404145225985?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<h2>バグ・不満・要望の傾向</h2>
+<p>不満の中心は相変わらず「壊れた」「消えた」系のトラブルです。</p>
+<ul>
+<li><strong>プロジェクト破損</strong>：重い作業中のフリーズや強制終了をきっかけにプロジェクトが壊れたという報告。</li>
+<li><strong>クラッシュによる作業消失</strong>：オフライン環境でのクラッシュで改変作業が丸ごと消えた嘆き。</li>
+<li><strong>ライセンス</strong>：組織に紐づいたメールアドレスでは個人ライセンスを取得しづらいという不便さの指摘。</li>
+<li><strong>ストレージ</strong>：Unityのプロジェクトやキャッシュでディスクが圧迫され、SSDやHDDの増設を考える声が目立ちました。</li>
+</ul>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おは浴〜🌞🌱<br>出張中にUnity起動したまま市役所から届いたExcel資料を開いたら重すぎてフリーズ💩<br>仕方なく強制終了したのが原因かProject壊れました😫<br>AI君に教えて貰いながら復旧頑張りましたが力尽き、1ヶ月前のBackupからの再出発。VR書道パフォーマンス侍の時の⬇️の姿はもう改変出来ません🥲 <a href="https://t.co/SVsqTIDdqN">pic.twitter.com/SVsqTIDdqN</a></p>&mdash; 不立もんじ(不立文字) (@huryumonji) <a href="https://x.com/huryumonji/status/2125721626369315245?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Wi-Fiない環境で黙々とUnityやってたら<br>クラッシュしました。<br>今日の改変全部消えました。<br>うどん食べます。</p>&mdash; てんちゃ (@TeNchqq) <a href="https://x.com/TeNchqq/status/2125624039771455897?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">おはようございます☀️<br>BGMをつけて確認してたのに、それよりもジャンプモーションのバグが見つかってぁわぁわしてしまいましたw<br> <a href="https://x.com/hashtag/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA?src=hash&amp;ref_src=twsrc%5Etfw">#個人開発</a> <a href="https://x.com/hashtag/Unity?src=hash&amp;ref_src=twsrc%5Etfw">#Unity</a> <a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C?src=hash&amp;ref_src=twsrc%5Etfw">#ゲーム制作</a> <a href="https://t.co/rFjT8yTMZJ">pic.twitter.com/rFjT8yTMZJ</a></p>&mdash; ハリボ (@harry_k4625) <a href="https://x.com/harry_k4625/status/2125728825900499114?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unityの組織にメールアドレスが紐づいてると個人ライセンス取得できなくなるの不便すぎる</p>&mdash; hao (@xeDS8tKRgY65097) <a href="https://x.com/xeDS8tKRgY65097/status/2125768540624187804?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<h2>学習・チュートリアル・コミュニティ活動</h2>
+<p>学習面では新刊とリンク集が目立ちました。オーム社から『Unity C#で神になる本。』が発売され、書店の入荷告知や「分厚い一冊」という反応が見られました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">11/26新刊：ISBN978-4-274-23572-6　オーム社『Unity C#で神になる本。』廣鉄夫著　15冊入荷 <a href="https://t.co/zrcTo410Ox">pic.twitter.com/zrcTo410Ox</a></p>&mdash; ジュンク堂書店池袋本店 PC書担当 (@junkudo_ike_pc) <a href="https://x.com/junkudo_ike_pc/status/2125875328946217376?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<p><a href="https://x.com/AdachiVFX">@AdachiVFX</a> はゲームエフェクトデザイナー志望者向けの学習リンク集を学習ステップ順に整理し直しています。資格勉強の傍らでUnity本を待つといった学び手の声もありました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ゲームエフェクトデザイナーを目指す方向けの学習リンク集をリニューアルしました！<br><br>・迷ったらまずこの3つ<br>・①〜⑥の学習ステップ順に整理<br>・UE5／Unity／Roblox、スクール、ツール、書籍まで<br><br>迷ったときは、このページを覗いてください<a href="https://t.co/WUEtSAUM1m">https://t.co/WUEtSAUM1m</a><a href="https://x.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#ゲームエフェクト</a></p>&mdash; ADACHI DESIGN (@AdachiVFX) <a href="https://x.com/AdachiVFX/status/2125777808123457598?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">最近は応用情報の勉強を中心に据えています。それに、英語のハノン初級、筋トレ、統計学ワークブックと続きます。週末にUnityの本も届くし、やりたいことが多すぎる。</p>&mdash; pgfan@応用情報・統計勉強中 (@pgfanmath) <a href="https://x.com/pgfanmath/status/2125714779599945927?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<p>VRChat と pixiv によるアバター着せ替えのチュートリアルワールドも紹介されています。短期ゲームジャムで二人チームが一本作り上げた振り返りも共有されました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">今日のぶいちゃ(๑òωó๑)ﾌﾝｽ<br>「アバター×着せ替えチュートリアル」VRChatとpixivがお送りする、アバターのいろはを学べるワールド✨ BOOTHでの購入からUnityでのアップロードまで漫画や展示で易しく解説！撮影コーナーでは自動撮影で自分だけのアバター紹介画像が作れます📸 <a href="https://t.co/U4jLTxesku">https://t.co/U4jLTxesku</a> <a href="https://t.co/PcxTp8LsRr">pic.twitter.com/PcxTp8LsRr</a></p>&mdash; U.O.N.（めんだこ好き） (@UltOftonNyx) <a href="https://x.com/UltOftonNyx/status/2125605930637439419?ref_src=twsrc%5Etfw">2026年11月25日</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unity1Weekで、6日・51時間でゲームを完成させました。<br><br>2人で作った「アステロイド交通(株)」、ライトニングトークの振り返りです。<br><br>・目標は3つ決めた（AI活用・6日以内・Switchで販売）<br>・「早くて簡単で効果が大きい」から作る<br>・総開発時間は2人で51時間<br><br>時間がないから、作り方が決まる。… <a href="https://t.co/WqZtWzEjSK">pic.twitter.com/WqZtWzEjSK</a></p>&mdash; ねこかつ｜Nekokatu Game Creator (@nekokatu0112) <a href="https://x.com/nekokatu0112/status/2125907431603781835?ref_src=twsrc%5Etfw">2026年11月26日</a></blockquote>
+<h2>商用/インディー/VRChat 別の動き</h2>
+<p><strong>商用</strong>：商用寄りの話題は、Unity CLI 向けプラグインのオープンベータや技術書の新刊、VTuber配信の自作システムといった、ツールと出版・配信の領域に集まりました。Unity社そのものの経営や株の話題はほとんど見られませんでした。</p>
+<p><strong>インディー</strong>：インディーでは生成AIを組み込んだ制作の報告が増えており、タワーディフェンスやアクションなどの進捗共有とともに、ゲームジャム参加の振り返りも見られました。</p>
+<p><strong>VRChat</strong>：VRChat では改変と撮影が二本柱で、Unityの扱いに苦戦しながらもアップロードまでこぎつける日常が引き続き大きな流れになっています。衣装の物理挙動を改善する揺れものツールの開発進捗も注目されました。</p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
